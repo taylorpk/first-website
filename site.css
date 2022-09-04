@@ -1,20 +1,115 @@
-body {
-    font-size: 25px;
+* {
+    margin: 0px;
 }
-li {
-    font-size: 30px;
+body {
+    font-size: 1.75rem;
+    margin: 0px;
 }
 p {
-    color: black;
-    font-size: 35px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 ul {
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0px;
 }
-head {
-    font-size: 60px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+li {
+    width: 100%;
+    min-height: 360px;
+    position:relative;
+    background-size: cover;
 }
+header {
+    text-align: center;
+    color: white;
+    background-image: url('/state-pics/alaska-aurora.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header.kentucky {
+    text-align: center;
+    color: white;
+    background-image: url('/state-pics/kentucky-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header.hawaii {
+    text-align: center;
+    color: white;
+    background-image: url('/state-pics/hawaii/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header.colorado {
+    text-align: center;
+    color: white;
+    background-image: url('/state-pics/colorado/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header.california {
+    text-align: center;
+    color: white;
+    background-image: url('/state-pics/california/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header.arizona {
+    text-align: center;
+    color: white;
+    background-image: url('/state-pics/arizona/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header.alaska {
+    text-align: center;
+    color: white;
+    background-image: url('/state-pics/alaska/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    font-size: 3.75rem;
+    text-align: center;
+}
+h1.hero-header {
+    font-size: 7rem;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+h2 {
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+}
+h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+main {
+    text-align: center;
+    max-width: 1024px;
+    margin: 0px auto;
+}
+@media (max-width: 1024px) {
+    main {
+        max-width: 768px;
+    }
+    img.responsive {
+        width: 100%;
+        height: auto;
+    }
+    ul {
+        grid-template-columns: 1fr;
+    }
+    }
+    
