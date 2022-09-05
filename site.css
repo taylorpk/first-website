@@ -3,7 +3,7 @@
 }
 body {
     font-size: 1.75rem;
-    margin: 0px;
+    margin: 0px 0px 50px 0px;
 }
 p {
     font-size: 2rem;
@@ -14,62 +14,22 @@ ul {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 10px;
+    column-gap: 30px;
+    row-gap: 30px;
     padding: 0px;
 }
 li {
     width: 100%;
-    min-height: 360px;
+    min-height: 321px;
     position:relative;
     background-size: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px 3px gray;
 }
 header {
+    font-family: 'Cabin', sans-serif;
     text-align: center;
     color: white;
-    background-image: url('/state-pics/alaska-aurora.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-header.kentucky {
-    text-align: center;
-    color: white;
-    background-image: url('/state-pics/kentucky-banner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-header.hawaii {
-    text-align: center;
-    color: white;
-    background-image: url('/state-pics/hawaii/banner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-header.colorado {
-    text-align: center;
-    color: white;
-    background-image: url('/state-pics/colorado/banner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-header.california {
-    text-align: center;
-    color: white;
-    background-image: url('/state-pics/california/banner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-header.arizona {
-    text-align: center;
-    color: white;
-    background-image: url('/state-pics/arizona/banner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-header.alaska {
-    text-align: center;
-    color: white;
-    background-image: url('/state-pics/alaska/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -92,17 +52,21 @@ h3 {
     left: 0;
     width: 100%;
     padding: 1rem 0rem;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    font-size: 1.75rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 main {
+    font-family: 'Cabin', sans-serif;
     text-align: center;
     max-width: 1024px;
     margin: 0px auto;
 }
 @media (max-width: 1024px) {
     main {
-        max-width: 768px;
+        max-width: 330px;
     }
     img.responsive {
         width: 100%;
@@ -110,6 +74,17 @@ main {
     }
     ul {
         grid-template-columns: 1fr;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h1.hero-header {
+        font-size: 2.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    h2 {
+        font-size: 1.75rem;
     }
     }
     
