@@ -11,9 +11,10 @@ p {
     margin-bottom: 3rem;
 }
 p.individual {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+    text-align: left;
 }
 ul {
     list-style: none;
@@ -50,10 +51,17 @@ h1.hero-header {
 h2 {
     padding-top: 2.5rem;
     padding-bottom: 5rem;
-    }
+} 
 h2.individual {
-    margin-bottom: 1rem;
-}
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0rem;
+    font-size: 1.75rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: left;
+}   
 h3 {
     position: absolute;
     bottom: 0;
@@ -74,8 +82,12 @@ main {
 }
 section {
     display: flex;
-    align-content: center;
-    column-gap: 150px;
+    column-gap: 50px;
+    align-items: stretch;
+    margin-bottom: 20px;
+    }
+img.section {
+    width: 50%;
 }
 @media (max-width: 1024px) {
     main {
@@ -98,6 +110,22 @@ section {
     }
     h2 {
         font-size: 1.75rem;
+        }
+    h2.individual {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    section {
+        flex-wrap: wrap;
+        flex-direction: vertical;
+    }
+    img.section {
+        width: 100%;
+    }
+    p.individual {
+        font-size: 1rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
     }
     }
     
